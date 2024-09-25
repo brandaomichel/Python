@@ -1,1 +1,3 @@
 *.vscode
+*ECL
+*eclcc.log
