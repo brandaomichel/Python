@@ -1,0 +1,33 @@
+class Veiculo:
+    def __init__(self, peso, rodas, potencia):
+        self.peso = peso
+        self.rodas = rodas
+        self.potencia = potencia
+    
+    def distancia(self):
+        return (self.peso / self.potencia) * 1000
+
+class Onibus(Veiculo):
+    def __init__(self, peso, rodas, potencia):
+        super().__init__(peso, rodas, potencia)
+    
+
+class Carro(Veiculo):
+    def __init__(self, peso, rodas, potencia):
+        super().__init__(peso, rodas, potencia)
+
+class Moto(Veiculo):
+    def __init__(self, peso, rodas, potencia):
+        super().__init__(peso, rodas, potencia)
+
+bus = Onibus(200, 6, 400)
+carro = Onibus(300, 4, 100)
+moto = Onibus(100, 2, 50)
+
+print(f"Peso: {bus.peso}, Potencia: {bus.potencia}, Rodas= {bus.rodas}")
+print(f"Peso: {carro.peso}, Potencia: {carro.potencia}, Rodas= {carro.rodas}")
+print(f"Peso: {moto.peso}, Potencia: {moto.potencia}, Rodas= {moto.rodas}")
+
+print(f"Distancia percorrida onibus {bus.distancia()}")
+print(f"Distancia percorrida carro {carro.distancia()}")
+print(f"Distancia percorrida moto {moto.distancia()}")
